@@ -1,0 +1,396 @@
+<?php
+
+class NPSprskindr
+{
+
+    /**
+     * @var BSNr $inpbsn
+     */
+    protected $inpbsn = null;
+
+    /**
+     * @var Geslachtsnaamr $geslachtsnaam
+     */
+    protected $geslachtsnaam = null;
+
+    /**
+     * @var VoorvoegselGeslachtsnaame $voorvoegselGeslachtsnaam
+     */
+    protected $voorvoegselGeslachtsnaam = null;
+
+    /**
+     * @var Voorletterse $voorletters
+     */
+    protected $voorletters = null;
+
+    /**
+     * @var Voornamenr $voornamen
+     */
+    protected $voornamen = null;
+
+    /**
+     * @var Geslachtsaanduidingr $geslachtsaanduiding
+     */
+    protected $geslachtsaanduiding = null;
+
+    /**
+     * @var DatumMetIndicator $geboortedatum
+     */
+    protected $geboortedatum = null;
+
+    /**
+     * @var VerblijfsadresGrpprsr $verblijfsadres
+     */
+    protected $verblijfsadres = null;
+
+    /**
+     * @var VerblijfBuitenlandGrp $subverblijfBuitenland
+     */
+    protected $subverblijfBuitenland = null;
+
+    /**
+     * @var Entiteittype $entiteittype
+     */
+    protected $entiteittype = null;
+
+    /**
+     * @var Sleutel $sleutelVerzendend
+     */
+    protected $sleutelVerzendend = null;
+
+    /**
+     * @var Sleutel $sleutelOntvangend
+     */
+    protected $sleutelOntvangend = null;
+
+    /**
+     * @var Sleutel $sleutelGegevensbeheer
+     */
+    protected $sleutelGegevensbeheer = null;
+
+    /**
+     * @var NoValue $noValue
+     */
+    protected $noValue = null;
+
+    /**
+     * @var anonymous82 $scope
+     */
+    protected $scope = null;
+
+    /**
+     * @var Verwerkingssoort $verwerkingssoort
+     */
+    protected $verwerkingssoort = null;
+
+    /**
+     * @param VerblijfsadresGrpprsr $verblijfsadres
+     * @param Entiteittype $entiteittype
+     * @param Sleutel $sleutelVerzendend
+     * @param Sleutel $sleutelOntvangend
+     * @param Sleutel $sleutelGegevensbeheer
+     * @param NoValue $noValue
+     * @param anonymous82 $scope
+     * @param Verwerkingssoort $verwerkingssoort
+     */
+    public function __construct($verblijfsadres, $entiteittype, $sleutelVerzendend, $sleutelOntvangend, $sleutelGegevensbeheer, $noValue, $scope, $verwerkingssoort)
+    {
+      $this->verblijfsadres = $verblijfsadres;
+      $this->entiteittype = $entiteittype;
+      $this->sleutelVerzendend = $sleutelVerzendend;
+      $this->sleutelOntvangend = $sleutelOntvangend;
+      $this->sleutelGegevensbeheer = $sleutelGegevensbeheer;
+      $this->noValue = $noValue;
+      $this->scope = $scope;
+      $this->verwerkingssoort = $verwerkingssoort;
+    }
+
+    /**
+     * @return BSNr
+     */
+    public function getInpbsn()
+    {
+      return $this->inpbsn;
+    }
+
+    /**
+     * @param BSNr $inpbsn
+     * @return NPS-prs-kind-r
+     */
+    public function setInpbsn($inpbsn)
+    {
+      $this->inpbsn = $inpbsn;
+      return $this;
+    }
+
+    /**
+     * @return Geslachtsnaamr
+     */
+    public function getGeslachtsnaam()
+    {
+      return $this->geslachtsnaam;
+    }
+
+    /**
+     * @param Geslachtsnaamr $geslachtsnaam
+     * @return NPS-prs-kind-r
+     */
+    public function setGeslachtsnaam($geslachtsnaam)
+    {
+      $this->geslachtsnaam = $geslachtsnaam;
+      return $this;
+    }
+
+    /**
+     * @return VoorvoegselGeslachtsnaame
+     */
+    public function getVoorvoegselGeslachtsnaam()
+    {
+      return $this->voorvoegselGeslachtsnaam;
+    }
+
+    /**
+     * @param VoorvoegselGeslachtsnaame $voorvoegselGeslachtsnaam
+     * @return NPS-prs-kind-r
+     */
+    public function setVoorvoegselGeslachtsnaam($voorvoegselGeslachtsnaam)
+    {
+      $this->voorvoegselGeslachtsnaam = $voorvoegselGeslachtsnaam;
+      return $this;
+    }
+
+    /**
+     * @return Voorletterse
+     */
+    public function getVoorletters()
+    {
+      return $this->voorletters;
+    }
+
+    /**
+     * @param Voorletterse $voorletters
+     * @return NPS-prs-kind-r
+     */
+    public function setVoorletters($voorletters)
+    {
+      $this->voorletters = $voorletters;
+      return $this;
+    }
+
+    /**
+     * @return Voornamenr
+     */
+    public function getVoornamen()
+    {
+      return $this->voornamen;
+    }
+
+    /**
+     * @param Voornamenr $voornamen
+     * @return NPS-prs-kind-r
+     */
+    public function setVoornamen($voornamen)
+    {
+      $this->voornamen = $voornamen;
+      return $this;
+    }
+
+    /**
+     * @return Geslachtsaanduidingr
+     */
+    public function getGeslachtsaanduiding()
+    {
+      return $this->geslachtsaanduiding;
+    }
+
+    /**
+     * @param Geslachtsaanduidingr $geslachtsaanduiding
+     * @return NPS-prs-kind-r
+     */
+    public function setGeslachtsaanduiding($geslachtsaanduiding)
+    {
+      $this->geslachtsaanduiding = $geslachtsaanduiding;
+      return $this;
+    }
+
+    /**
+     * @return DatumMetIndicator
+     */
+    public function getGeboortedatum()
+    {
+      return $this->geboortedatum;
+    }
+
+    /**
+     * @param DatumMetIndicator $geboortedatum
+     * @return NPS-prs-kind-r
+     */
+    public function setGeboortedatum($geboortedatum)
+    {
+      $this->geboortedatum = $geboortedatum;
+      return $this;
+    }
+
+    /**
+     * @return VerblijfsadresGrpprsr
+     */
+    public function getVerblijfsadres()
+    {
+      return $this->verblijfsadres;
+    }
+
+    /**
+     * @param VerblijfsadresGrpprsr $verblijfsadres
+     * @return NPS-prs-kind-r
+     */
+    public function setVerblijfsadres($verblijfsadres)
+    {
+      $this->verblijfsadres = $verblijfsadres;
+      return $this;
+    }
+
+    /**
+     * @return VerblijfBuitenlandGrp
+     */
+    public function getSubverblijfBuitenland()
+    {
+      return $this->subverblijfBuitenland;
+    }
+
+    /**
+     * @param VerblijfBuitenlandGrp $subverblijfBuitenland
+     * @return NPS-prs-kind-r
+     */
+    public function setSubverblijfBuitenland($subverblijfBuitenland)
+    {
+      $this->subverblijfBuitenland = $subverblijfBuitenland;
+      return $this;
+    }
+
+    /**
+     * @return Entiteittype
+     */
+    public function getEntiteittype()
+    {
+      return $this->entiteittype;
+    }
+
+    /**
+     * @param Entiteittype $entiteittype
+     * @return NPS-prs-kind-r
+     */
+    public function setEntiteittype($entiteittype)
+    {
+      $this->entiteittype = $entiteittype;
+      return $this;
+    }
+
+    /**
+     * @return Sleutel
+     */
+    public function getSleutelVerzendend()
+    {
+      return $this->sleutelVerzendend;
+    }
+
+    /**
+     * @param Sleutel $sleutelVerzendend
+     * @return NPS-prs-kind-r
+     */
+    public function setSleutelVerzendend($sleutelVerzendend)
+    {
+      $this->sleutelVerzendend = $sleutelVerzendend;
+      return $this;
+    }
+
+    /**
+     * @return Sleutel
+     */
+    public function getSleutelOntvangend()
+    {
+      return $this->sleutelOntvangend;
+    }
+
+    /**
+     * @param Sleutel $sleutelOntvangend
+     * @return NPS-prs-kind-r
+     */
+    public function setSleutelOntvangend($sleutelOntvangend)
+    {
+      $this->sleutelOntvangend = $sleutelOntvangend;
+      return $this;
+    }
+
+    /**
+     * @return Sleutel
+     */
+    public function getSleutelGegevensbeheer()
+    {
+      return $this->sleutelGegevensbeheer;
+    }
+
+    /**
+     * @param Sleutel $sleutelGegevensbeheer
+     * @return NPS-prs-kind-r
+     */
+    public function setSleutelGegevensbeheer($sleutelGegevensbeheer)
+    {
+      $this->sleutelGegevensbeheer = $sleutelGegevensbeheer;
+      return $this;
+    }
+
+    /**
+     * @return NoValue
+     */
+    public function getNoValue()
+    {
+      return $this->noValue;
+    }
+
+    /**
+     * @param NoValue $noValue
+     * @return NPS-prs-kind-r
+     */
+    public function setNoValue($noValue)
+    {
+      $this->noValue = $noValue;
+      return $this;
+    }
+
+    /**
+     * @return anonymous82
+     */
+    public function getScope()
+    {
+      return $this->scope;
+    }
+
+    /**
+     * @param anonymous82 $scope
+     * @return NPS-prs-kind-r
+     */
+    public function setScope($scope)
+    {
+      $this->scope = $scope;
+      return $this;
+    }
+
+    /**
+     * @return Verwerkingssoort
+     */
+    public function getVerwerkingssoort()
+    {
+      return $this->verwerkingssoort;
+    }
+
+    /**
+     * @param Verwerkingssoort $verwerkingssoort
+     * @return NPS-prs-kind-r
+     */
+    public function setVerwerkingssoort($verwerkingssoort)
+    {
+      $this->verwerkingssoort = $verwerkingssoort;
+      return $this;
+    }
+
+}

@@ -1,0 +1,98 @@
+<?php
+
+namespace RRSVP\Stuf;
+
+class BouwkundigeBestemming
+{
+    const __default = 'a1000';
+    const a1000 = '1000';
+    const a1001 = '1001';
+    const a1002 = '1002';
+    const a1004 = '1004';
+    const a1005 = '1005';
+    const a1006 = '1006';
+    const a1007 = '1007';
+    const a1008 = '1008';
+    const a1009 = '1009';
+    const a1010 = '1010';
+    const a1011 = '1011';
+    const a2000 = '2000';
+    const a2100 = '2100';
+    const a2110 = '2110';
+    const a2120 = '2120';
+    const a2130 = '2130';
+    const a2150 = '2150';
+    const a2160 = '2160';
+    const a2170 = '2170';
+    const a2180 = '2180';
+    const a2190 = '2190';
+    const a2199 = '2199';
+    const a2200 = '2200';
+    const a2210 = '2210';
+    const a2220 = '2220';
+    const a2230 = '2230';
+    const a2240 = '2240';
+    const a2250 = '2250';
+    const a2260 = '2260';
+    const a2270 = '2270';
+    const a2299 = '2299';
+    const a2300 = '2300';
+    const a2310 = '2310';
+    const a2320 = '2320';
+    const a2330 = '2330';
+    const a2340 = '2340';
+    const a2350 = '2350';
+    const a2360 = '2360';
+    const a2399 = '2399';
+    const a2400 = '2400';
+    const a2410 = '2410';
+    const a2420 = '2420';
+    const a2430 = '2430';
+    const a2440 = '2440';
+    const a2499 = '2499';
+    const a2500 = '2500';
+    const a2510 = '2510';
+    const a2520 = '2520';
+    const a2530 = '2530';
+    const a2540 = '2540';
+    const a2550 = '2550';
+    const a2560 = '2560';
+    const a2570 = '2570';
+    const a2599 = '2599';
+    const a2600 = '2600';
+    const a2610 = '2610';
+    const a2620 = '2620';
+    const a2630 = '2630';
+    const a2640 = '2640';
+    const a2650 = '2650';
+    const a2660 = '2660';
+    const a2670 = '2670';
+    const a2680 = '2680';
+    const a2699 = '2699';
+    const a2700 = '2700';
+    const a2710 = '2710';
+    const a2720 = '2720';
+    const a2730 = '2730';
+    const a2740 = '2740';
+    const a2750 = '2750';
+    const a2799 = '2799';
+    const a2800 = '2800';
+    const a2810 = '2810';
+    const a2820 = '2820';
+    const a2830 = '2830';
+    const a2840 = '2840';
+    const a2850 = '2850';
+    const a2860 = '2860';
+    const a2899 = '2899';
+    const a2900 = '2900';
+    const a2910 = '2910';
+    const a2920 = '2920';
+    const a2930 = '2930';
+    const a2940 = '2940';
+    const a2950 = '2950';
+    const a2960 = '2960';
+    const a2970 = '2970';
+    const a2999 = '2999';
+
+
+}
